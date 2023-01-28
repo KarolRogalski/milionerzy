@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Karol Rogalski</title>
+</head>
+
+<body>
+    <div id="startBtn"> START</div>
+    <canvas id="confetti-canvas"></canvas>
+    <h1 id='winning'>1 000 000</h1>
+    <div id="q-image">
+        <img src="./img/kamien.jpg" alt="kamien" />
+    </div>
+    <div id="q-image-2">
+        <img src="./img/figura.jpg" alt="kamien" />
+    </div>
+    <div class="vid-wrap">
+        <video id="video">
+            <source src="./sound/vid.mp4" type="video/mp4">
+        </video>
+        <div class="btn-wrap">
+
+            <div id="playV">Play</div>
+            <div id="pauseV">Pause</div>
+        </div>
+    </div>
+    <div id="phone">30</div>
+    <div id="help-people">
+        <div class="graf grafA">
+            <span class="percents">%</span>
+            <span class="column">
+                <span class="c-graf"></span>
+            </span>
+            <span class="letter">A</span>
+        </div>
+        <div class="graf grafB">
+            <span class="percents">%</span>
+            <span class="column">
+                <span class="c-graf"></span>
+            </span>
+            <span class="letter">B</span>
+
+        </div>
+        <div class="graf grafC">
+            <span class="percents">%</span>
+            <span class="column">
+                <span class="c-graf"></span>
+            </span>
+            <span class="letter">C</span>
+        </div>
+        <div class="graf grafD">
+            <span class="percents">%</span>
+            <span class="column">
+                <span class="c-graf"></span>
+            </span>
+            <span class="letter">D</span>
+        </div>
+    </div>
+    <section id="score">
+        <ul class="kola">
+            <li class="help help-people used"><img class="kolo-people" src="./img/people1.png" /></li>
+            <li class="help help-50 kolo-50">50:50</li>
+            <li class="help help-tel">Tel</li>
+        </ul>
+        <ul class="question">
+            <li class="score-li safe current-question"><span class="border"></span><span class="numer">12</span> <span
+                    class="current played"></span><span class="winning">1
+                    000
+                    000</span></li>
+            <li class="score-li"><span class="border"></span><span class="numer">11</span> <span
+                    class="current"></span><span class="winning">500 000</span></li>
+            <li class="score-li"><span class="border"></span><span class="numer">10</span> <span
+                    class="current"></span><span class="winning">250 000</span></li>
+            <li class="score-li"><span class="border"></span><span class="numer">9</span> <span
+                    class="current"></span><span class="winning">125 000</span></li>
+            <li class="score-li"><span class="border"></span><span class="numer">8</span> <span
+                    class="current"></span><span class="winning">75 000</span></li>
+            <li class="score-li safe"><span class="border"></span><span class="numer">7</span> <span
+                    class="current"></span><span class="winning">40
+                    000</span></li>
+            <li class="score-li"><span class="border"></span><span class="numer">6</span> <span
+                    class="current"></span><span class="winning">20 000</span></li>
+            <li class="score-li"><span class="border"></span><span class="numer">5</span> <span
+                    class="current"></span><span class="winning">10 000</span></li>
+            <li class="score-li"><span class="border"></span><span class="numer">4</span> <span
+                    class="current"></span><span class="winning">5000</span></li>
+            <li class="score-li"><span class="border"></span><span class="numer">3</span> <span
+                    class="current"></span><span class="winning">2000</span></li>
+            <li class="score-li safe"><span class="border"></span><span class="numer">2</span> <span
+                    class="current"></span><span class="winning">1000</span>
+            </li>
+            <li class="score-li current-question">
+                <span class="border"></span>
+                <span class="numer">1</span>
+                <span class="current played"></span>
+                <span class="winning">500</span>
+            </li>
+        </ul>
+    </section>
+    <section id="question">
+        <div class="top-part">
+            <span class="line"></span>
+            <div class="q-text">
+                <div class="border"></div>
+                <div id="text">
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quia ad quis
+                    asperiores doloribus?
+
+                </div>
+            </div>
+        </div>
+        <div class="bottom-part">
+            <div id="play">
+                <img src="./img/arrow.png" alt="arrow next">
+            </div>
+            <div id="next-question">
+                <img src="./img/arrow.png" alt="arrow next">
+
+            </div>
+            <div class="top">
+                <span class="line"></span>
+                <div class="answer selected">
+                    <div class="answer-border"></div>
+                    <div class="text answerA">
+                        A: something
+                        A: something
+                        A: something
+                        A: something
+                        A: something
+                    </div>
+                </div>
+                <div class="answer correct">
+                    <div class="answer-border"></div>
+                    <div class="text answerB">
+                        B: something
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <span class="line"></span>
+                <div class="answer">
+                    <div class="answer-border"></div>
+                    <div class="text answerC">
+                        A: something
+                        A: something
+                        A: something
+                        A: something
+                        A: something
+                    </div>
+                </div>
+                <div class="answer">
+                    <div class="answer-border"></div>
+                    <div class="text answerD">
+                        A: something
+                        A: something
+                        A: something
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/confetti.js"></script>
+</body>
+
+</html>
